@@ -1,29 +1,20 @@
 import markdown
+import os
+import json
 
-md = open('test.md', 'r')
-text = md.read()
-htmlBody = markdown.markdown(text, extensions=['fenced_code', 'tables'])
+allFiles = os.listdir('input')
 
-for i in range(10, 0, -1):
-  print(i)
+contentDic = {}
 
+for file in allFiles:
+  md = open(f'./input/{file}', 'r')
+  text = md.read()
 
-with open('test.html', 'w') as f:
-  html = f"""
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Backend Documantation</title>
-      <link rel="stylesheet" href="./assets/index.css">
-    </head>
-    <body>
-      {htmlBody}  
+  htmlBody = markdown.markdown(text, extensions=['fenced_code', 'tables', 'codehilite'])
 
-      <script  src="./assets/index.js" />
-    </body>
-    </html>
-  """ 
-  f.write(html)
+  contentDic[file.split('.')[0]] = htmlBody
+
+formated = json.dumps(contentDic, indent=2)
+
+f = open('pages.json', 'w')
+f.write(formated)

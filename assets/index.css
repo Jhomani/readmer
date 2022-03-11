@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url(./css-module/tables.css);
 @import url(./css-module/sidebar.css);
 @import url(./css-module/primitive.css);
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap');
+@import url(./css-module/codes.css);
+@import url(./css-module/palette.css);
 
 html, *, *::after, *::before{
   box-sizing: border-box;
@@ -9,12 +11,16 @@ html, *, *::after, *::before{
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p, th, td, li, code {
+  color: #F2F2F2;
+}
+
 html {
   background-color: #000;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   /* padding: 0 10px; */
   display: flex;
 }
@@ -75,7 +81,15 @@ input::placeholder {
   color: #fff;
 }
 
+main > *{
+  margin-bottom: 20px;
+}
+
 main {
+  /* display: flex;
+  flex-direction: column;
+  row-gap: 20px; */
   background-color: #141515;
+  padding: 10px 15px;
   width: 100%;
 }

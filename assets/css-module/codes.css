@@ -1,0 +1,20 @@
+pre {
+  background: #fff1;
+  border-radius: 15px;
+  padding: 15px 12px;
+}
+
+code:not(code[class]) {
+  background-color: #fff2;
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+
+blockquote {
+  padding-left: 8px;
+  border-left-style: solid;
+  border-left-color: #55c975bb;
+  border-left-width: 3px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}

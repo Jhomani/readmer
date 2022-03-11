@@ -1,32 +1,32 @@
 .header1, h1 {
-  font-size: 96px;
+  font-size: 66px;
   line-height: 0.985;
   font-weight: 300;
 }
 .header2, h2 {
-  font-size: 60px;
+  font-size: 44px;
   line-height: 0.995;
   font-weight: 300;
 }
 .header3, h3 {
-  font-size: 48px;
+  font-size: 28px;
   line-height: 1;
   font-weight: 400;
 }
 .header4, h4 {
-  font-size: 34px;
-  line-height: .25;
-  font-weight: 400;
+  font-size: 24px;
+  line-height: 0.975;
+  font-weight: 600;
 }
 .header5, h5 {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 0;
-  font-weight: 400;
+  font-weight: 600;
 }
 .header6, h6 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.015;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .sub-title1 {
@@ -66,4 +66,16 @@
   line-height: 1.015;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+#content > ul {
+  padding-left: 25px;
+  list-style: inside;
+}
+#content > ul > li{
+  line-height: 2rem;
+}
+
+#content a {
+  color: #00b3ba;
 }

@@ -44,6 +44,10 @@
   /* background-color: #fff1; */
 }
 
+.sidebar-content_items span[role='text']{
+  text-transform: capitalize;
+}
+
 .sidebar-content_items a {
   color: #fff;
   padding: 10px;
@@ -61,4 +65,5 @@
 
 .sidebar_icon {
   font-size: 22px;
+  line-height: 1;
 }

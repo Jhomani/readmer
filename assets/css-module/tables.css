@@ -1,0 +1,27 @@
+table, th, td {
+  border: 1px solid #fff1;
+  border-collapse: collapse;
+}
+
+thead th{
+  border: 2px solid #fff1;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 5px;
+}
+
+th, td {
+  padding: 3px 6px;
+}
+
+tr {
+  line-height: 1.8rem;
+}
+
+tr:hover {
+  background-color: #ffffff07;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: #ffffff05;
+}
